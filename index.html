@@ -116,6 +116,33 @@
 
 	</div>
 	</a>
+
+	<script>
+        document.addEventListener("DOMContentLoaded", function() {
+var interval = setInterval(function() {
+  var img = document.createElement('img');
+  img.style.position = 'absolute';
+
+  img.style.zIndex = -2;
+  img.width = 40
+  img.style.opacity = 0.6;
+  img.src = 'graphic/burst3.svg';
+
+
+  img.style.left = Math.random() * window.innerWidth + 'px';
+  img.style.top = Math.random() * window.innerHeight + 'px';
+  document.body.appendChild(img);
+var fade = function() {
+  img.style.opacity = img.style.opacity - 0.01;
+  if (img.style.opacity > 0) {
+    setTimeout(fade, 100);
+  }
+};
+fade();
+}, Math.random() * 14000);
+});
+        </script>
+
 <!--	<script>
 		window.addEventListener('scroll', function() {
 		  // Calculate the scroll position as a percentage of the page height
@@ -128,3 +155,7 @@
 	  </script>-->
 
 </body></html>
+
+
+
+
