@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0038)https://byk.oa.uj.edu.pl/~kkalinowski/ -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		
 		<title>K. K. Kalinowski</title>
 		<link rel="icon" type="image/x-icon" href="graphic/favicon.png">
 		<meta name="description" content="Master Astronomy student at Aarhus University.">
@@ -18,8 +16,7 @@
 }
 		h1,h3,li,p {
 		font-family: passata;
-		font-weight: normal;
-		
+		font-weight: normal;	
 }
 		p {
 		text-align: justify;
@@ -32,10 +29,7 @@
 		margin-right: auto;
 		width: 20%;
 		max-width: 120px;
-		
 }
-		</style>
-  <style>
     .rotating-image {
       position: fixed;
       top: 10%;
@@ -59,12 +53,7 @@
 			}
 		  }
   </style>
-
-
 	<body>
-
-		<div class="rotating-image"></div>
-
 		<div class="container">
 			<h1>KAMIL KRZYSZTOF KALINOWSKI</h1>
 			<p>Aiming to become a space researcher, I find satisfaction with a discovery of a qualitatively new information previously lost in the immensity of the outer space.
@@ -83,52 +72,25 @@
 			<li><a href="https://t.me/kamilkalinowski" target="_blank" title="Contact me on Telegram Messenger">Telegram</a></li>
 			<hr>
 		</div>
-
-
-		  		  
-
-		  
-		  
-		  
-		  
-		  
-		
-		
-		
 	<a href="https://phys.au.dk/en/" target="_blank">
 	<img
 	src="graphic/ausegl_sort.svg"
 	alt="AU seal"
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	<div class="footer">
-
 	</div>
 	</a>
-
+	<!-- planets -->
+	<div class="rotating-image"></div> 
+	<!--GRBs-->
 	<script>
         document.addEventListener("DOMContentLoaded", function() {
 var interval = setInterval(function() {
   var img = document.createElement('img');
   img.style.position = 'absolute';
-
   img.style.zIndex = -2;
   img.width = 40
   img.style.opacity = 0.6;
   img.src = 'graphic/burst3.svg';
-
-
   img.style.left = Math.random() * window.innerWidth + 'px';
   img.style.top = Math.random() * window.innerHeight + 'px';
   document.body.appendChild(img);
@@ -139,23 +101,7 @@ var fade = function() {
   }
 };
 fade();
-}, Math.random() * 14000);
+}, Math.random() * 28000);
 });
         </script>
-
-<!--	<script>
-		window.addEventListener('scroll', function() {
-		  // Calculate the scroll position as a percentage of the page height
-		  var scrollPos = window.scrollY / (document.body.offsetHeight - window.innerHeight);
-		  
-		  // Set the rotation of the background image based on the scroll position
-		  var image = document.querySelector('.rotating-image');
-		  image.style.transform = 'rotate(' + (scrollPos * 100) + 'deg)';
-		});
-	  </script>-->
-
 </body></html>
-
-
-
-
