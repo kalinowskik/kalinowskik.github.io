@@ -91,8 +91,8 @@ var interval = setInterval(function() {
   img.width = 40
   img.style.opacity = 0.6;
   img.src = 'graphic/burst3.svg';
-  img.style.left = Math.random() * window.innerWidth + 'px';
-  img.style.top = Math.random() * window.innerHeight + 'px';
+  img.style.left = Math.random() * window.innerWidth - 40 + 'px';
+  img.style.top = Math.random() * window.innerHeight - 40 + 'px';
   document.body.appendChild(img);
 var fade = function() {
   img.style.opacity = img.style.opacity - 0.01;
@@ -101,7 +101,7 @@ var fade = function() {
   }
 };
 fade();
-}, Math.random() * 28000);
+}, Math.random() * 28000+14000);
 });
         </script>
 </body></html>
